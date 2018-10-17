@@ -91,7 +91,7 @@ class MqttHttpBridge < Sinatra::Base
   end
 
   get '/*' do
-    content_type('text/plain')
+    content_type('application/json')
     mqtt_get(topic)
   end
 
